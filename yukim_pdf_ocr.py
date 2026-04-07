@@ -86,9 +86,8 @@ pipeline_options = PdfPipelineOptions()
 pipeline_options.accelerator_options.num_threads = 1 # [AUTO] Core limit
 pipeline_options.accelerator_options.device = "cuda" if USE_GPU else "cpu"
 
-# [AUTO] Limit batch sizes to prevent OOM/CPU spikes
-pipeline_options.ocr_options.batch_size = 1
-# pipeline_options.layout_options.batch_size = 1 # docling 버전에 따라 다를 수 있음
+# [AUTO] Note: batch_size limit via ocr_options might not be supported in this version.
+# num_threads=1 already provides significant resource control.
 
 converter = DocumentConverter(
     format_options={
