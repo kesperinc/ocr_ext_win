@@ -25,3 +25,6 @@ fail_tracker.json
 # Temporary files
 tmp/
 *.tmp
+
+# Backups
+.git_original_backup/
