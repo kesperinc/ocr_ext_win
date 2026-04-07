@@ -1,0 +1,27 @@
+# Python / Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+pdf_ocr_*.log
+monitor_ocr_*.log
+watchdog_*.log
+test_gpu.log
+
+# Data and Progress Tracking
+*.json
+scan_results.json
+fail_tracker.json
+
+# IDE / Tool files
+.gstack/
+.vscode/
+.idea/
+.DS_Store
+
+# Temporary files
+tmp/
+*.tmp
